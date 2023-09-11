@@ -6,15 +6,16 @@
 /*   By: almarcos <almarcos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/06 17:11:28 by almarcos          #+#    #+#             */
-/*   Updated: 2023/09/06 18:24:30 by almarcos         ###   ########.fr       */
+/*   Updated: 2023/09/11 11:38:46 by almarcos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int ft_putchar(char c)
+int	ft_putchar(char c)
 {
-	int bytes;
+	int	bytes;
+
 	bytes = write(1, &c, 1);
 	return (bytes);
 }

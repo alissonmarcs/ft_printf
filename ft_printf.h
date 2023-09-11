@@ -6,7 +6,7 @@
 /*   By: almarcos <almarcos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/06 17:09:50 by almarcos          #+#    #+#             */
-/*   Updated: 2023/09/07 17:18:16 by almarcos         ###   ########.fr       */
+/*   Updated: 2023/09/11 13:09:16 by almarcos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,11 @@
 # include <stdarg.h>
 # include <unistd.h>
 
-int	ft_printf(const char *, ...);
-int	ft_putchar(char c);
+int	ft_printf(const char *format, ...);
 int	ft_strlen(const char *s);
+int	ft_putchar(char c);
 int	ft_putstr(char *str);
+int	ft_putptr(unsigned long n, char *base);
 int	ft_putnbr_base(long long n, char *base);
-int ft_putptr(unsigned long n, char *base);
 
 #endif

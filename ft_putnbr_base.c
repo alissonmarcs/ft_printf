@@ -6,7 +6,7 @@
 /*   By: almarcos <almarcos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 10:21:54 by almarcos          #+#    #+#             */
-/*   Updated: 2023/09/07 13:30:12 by almarcos         ###   ########.fr       */
+/*   Updated: 2023/09/11 13:09:59 by almarcos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	ft_putnbr_base(long long n, char *base)
 {
-	int bytes;
-	int base_size;
+	int	bytes;
+	int	base_size;
 
 	bytes = 0;
 	base_size = ft_strlen(base);

@@ -6,19 +6,19 @@
 /*   By: almarcos <almarcos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/06 17:51:22 by almarcos          #+#    #+#             */
-/*   Updated: 2023/09/07 17:38:03 by almarcos         ###   ########.fr       */
+/*   Updated: 2023/09/11 13:10:54 by almarcos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int ft_parse(char formater, va_list args);
+static int	ft_parse(char formater, va_list args);
 
-int ft_printf(const char *format, ...)
+int	ft_printf(const char *format, ...)
 {
-	va_list args;
-	int index;
-	int bytes;
+	va_list	args;
+	int		index;
+	int		bytes;
 
 	if (!format)
 		return (-1);
@@ -37,9 +37,9 @@ int ft_printf(const char *format, ...)
 	return (bytes);
 }
 
-int ft_parse(char formater, va_list args)
+static int	ft_parse(char formater, va_list args)
 {
-	int bytes;
+	int	bytes;
 
 	bytes = 0;
 	if (formater == 'c')
