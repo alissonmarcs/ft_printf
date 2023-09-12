@@ -6,7 +6,7 @@
 #    By: almarcos <almarcos@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/05 10:25:45 by almarcos          #+#    #+#              #
-#    Updated: 2023/09/07 17:22:30 by almarcos         ###   ########.fr        #
+#    Updated: 2023/09/12 09:38:21 by almarcos         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,12 +32,14 @@ $(OBJECTS_FOLDER)%.o: %.c
 	ar rc $(NAME) $@
 
 clean:
-	rm -rf $(OBJECTS)
+	rm -rf $(OBJECTS_FOLDER)*
 
 fclean: clean
-	rm $(NAME)
+	rm -f $(NAME)
 
 re: fclean all
 
 run: all
 	@$(CC) $(CFLAGS) main.c $(NAME) && ./a.out
+
+.PHONY: all clean fclean re run
