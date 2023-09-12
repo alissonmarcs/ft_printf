@@ -6,16 +6,13 @@
 /*   By: almarcos <almarcos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/06 17:09:50 by almarcos          #+#    #+#             */
-/*   Updated: 2023/09/11 13:09:16 by almarcos         ###   ########.fr       */
+/*   Updated: 2023/09/12 09:35:58 by almarcos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 
 # define FT_PRINTF_H
-
-// test only
-# include <stdio.h>
 
 # define DECIMAL_BASE "0123456789"
 # define HEXA_LOW_BASE "0123456789abcdef"
