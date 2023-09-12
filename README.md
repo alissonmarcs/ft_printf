@@ -16,6 +16,7 @@ The following conversios are implemented:
 - %x prints a number in hexadecimal lowercase format
 - %X prints a number in hexadecimal upcase format
 - %p prints a void pointer in hexadecimal lowercase format
+- %% prints a percent digit
 
 ## How to use
 
