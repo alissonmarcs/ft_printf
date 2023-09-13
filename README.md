@@ -7,7 +7,7 @@
 
 `ft_printf` is a function that mimics the original standardard `printf`. So, a call like `ft_printf("my name is %s\n", "John")` will write `my name is John` in your terminal.
 
-The following conversios are implemented:
+The following conversios have been implemented:
 - %c prints a single char
 - %s prints a string
 - %d prints a number in base 10
@@ -20,9 +20,9 @@ The following conversios are implemented:
 
 ## How to use
 
-Clone this repository, then `cd` and `make` on it.
+Clone this repository, then `cd` and `make` on it, you will end up with a `libftprintf.a` file that is the library of the `ft_printf`.
 
-After that, include `ft_printf.h` in your `.c` and compile your `.c` with `libftprintf.a`:
+After that, copy and paste the following main in a `main.c` file and compile it with the library:
 
 ```c
 #include "ft_printf.h"
